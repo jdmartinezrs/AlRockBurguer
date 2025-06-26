@@ -25,7 +25,9 @@ module.exports = class connect {
         this.#dbName = process.env.MONGO_DB_NAME;
 
         // 🟡 Crea la URI de conexión a MongoDB.
-        this.uri = `${this.#host}${this.#user}:${this.#pass}@${this.#cluster}/${this.#dbName}`;
+        this.uri = `mongodb://${this.#user}:${this.#pass}@${this.#cluster}:${this.#port}/${this.#dbName}?authSource=admin`;
+
+        //this.uri = `${this.#host}${this.#user}:${this.#pass}@${this.#cluster}/${this.#dbName}`;
         connect.instance = this; // 🟡 Guarda la instancia actual en la propiedad estática.
         return this; // 🟡 Devuelve la instancia de la clase.
     }

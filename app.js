@@ -1,6 +1,6 @@
 require('dotenv').config({ path: './.env' });
-const ConnectToDatabase = require('./infrastucture/database/mongodb.js');
-const createServer = require('./infrastucture/server/server');
+const ConnectToDatabase = require('./server/infraestructure/database/mongodb');
+const createServer = require('./server/infraestructure/server/server');
 
 
 const startApp = async () => {

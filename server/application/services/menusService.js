@@ -1,4 +1,5 @@
-const MenuRepository = require('../domain/repositories/menuRepository');
+const MenuRepository = require('../../domain/repositories/menuRepository');
+
 
 class MenusService {
     constructor() {
