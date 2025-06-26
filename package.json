@@ -1,0 +1,20 @@
+{
+  "name": "alrockburguer",
+  "version": "1.0.0",
+  "description": "proyecto de gestión de reservas para AlRockBurguer, para la hackaton de talento tech Oriente 2025",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdmartinezrs/AlRockBurguer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdmartinezrs/AlRockBurguer/issues"
+  },
+  "homepage": "https://github.com/jdmartinezrs/AlRockBurguer#readme"
+}

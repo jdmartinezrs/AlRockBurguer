@@ -1,0 +1,43 @@
+# Node.js
+node_modules/
+.env
+.env.* # Para múltiples entornos como .env.development, .env.production
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite / React
+dist/
+build/
+.vite/
+*.local
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs
+logs/
+*.log
+logs/**/*.log
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+
+# Dependency lock files (si usas solo uno, ignora los otros)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Testing
+coverage/
+*.lcov
+
+# Optional: skip output of custom scripts or dev tools
+out/
+temp/
