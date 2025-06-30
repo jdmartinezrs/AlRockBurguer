@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 class MenusValidator {
   getAllMenusValidator() {
     return [
-      query('restaurante_id')
+      query('menus')
         .optional()
         .custom(value => mongoose.Types.ObjectId.isValid(value))
         .withMessage('restaurante_id debe ser un ObjectId válido'),

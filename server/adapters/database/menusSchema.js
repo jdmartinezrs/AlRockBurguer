@@ -1,20 +1,20 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 const { Schema, model, Types } = mongoose;
 
 const HamburguesaSchema = new Schema({
   hamburguesa_id: { type: Types.ObjectId, required: true },
   nombre: { type: String, required: true },
-  descripcion: { type: String },
+  descripcion: String,
   precio: { type: Number, required: true },
-  imagen: { type: String }
+  imagen: String
 }, { _id: false });
 
 const BebidaSchema = new Schema({
   bebida_id: { type: Types.ObjectId, required: true },
   nombre: { type: String, required: true },
-  descripcion: { type: String },
+  descripcion: String,
   precio: { type: Number, required: true },
-  imagen: { type: String }
+  imagen: String
 }, { _id: false });
 
 const MenuSchema = new Schema({
@@ -23,4 +23,4 @@ const MenuSchema = new Schema({
   bebidas: { type: [BebidaSchema], default: [] }
 });
 
-export default model('Menu', MenuSchema);
+module.exports = model('Menu', MenuSchema, 'menus'); 
