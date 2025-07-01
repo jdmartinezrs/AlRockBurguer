@@ -27,7 +27,7 @@ const SalonSchema = new Schema({
     type: String,
     required: true
   },
-  precio_por_silla: {
+  precio_por_mesa: {
     type: Number,
     required: true
   },
