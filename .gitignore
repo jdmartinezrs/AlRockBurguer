@@ -41,3 +41,4 @@ coverage/
 # Optional: skip output of custom scripts or dev tools
 out/
 temp/
+certs/
