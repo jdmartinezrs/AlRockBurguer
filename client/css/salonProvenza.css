@@ -1,9 +1,190 @@
+@import url(variables.css);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   width: 100%;
+  height: 100%;
 }
 
-.title{
-    background-color: red;
+.container {  
+    width: 100%;
+    height: 100%;
+  display: grid;
+  grid-template-columns: 4.5fr 2fr 2fr 4.5fr;
+  grid-template-rows: 0.8fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . ."
+    ". sala1a sala2a ."
+    ". sala1b sala2b ."
+    ". sala1c sala2c ."
+    ". sala1d sala2d ."
+    ". despacho sala2d ."
+    ". despacho tarima ."
+    ". despacho tarima ."
+    ". . . .";
+}
+
+.despacho { grid-area: despacho; }
+
+.tarima { grid-area: tarima; }
+
+.sala1a { 
+    grid-area: sala1a;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 50px;
+    
+      
+}
+
+.sala1b { 
+    grid-area: sala1b; 
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sala1c { 
+    grid-area: sala1c; 
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.sala1d {
+    grid-area: sala1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    
+    
+
+
+    }
+
+.Horizontal1{
+    height: 100%;
+    width: 50%;
+    align-content: end;
+    padding-bottom: 10px;
+}
+
+.Horizontal2{
+    height: 100%;
+    width: 50%;
+    align-content: start;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.vertical1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 30%;
+    
+}
+.vertical2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 30%;
+    
+}
+
+
+
+
+
+.sala2a { grid-area: sala2a; }
+
+.sala2b { grid-area: sala2b; }
+
+.sala2c { grid-area: sala2c; }
+
+.sala2d { grid-area: sala2d; }
+
+.container > div {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.MesaIzquierda1{
+    margin-left: 20px;
+    width: 10px;
+}
+.Mesa1{
+    background-color: var(--color-primary);
+    height: 75px;
+    width: 32px;
+    
+}
+.Mesa2{
+    background-color: var(--color-secundary);
+    height: 32px;
+    width: 70px;
+   
+}
+
+.Mesa3{
+    background-color: var(--color-secundary);
+    height: 32px;
+    width: 70px;
+    
+}
+
+.Mesa4{
+    background-color: var(--color-primary);
+    height: 32px;
+    width: 32px;
+}
+.Mesa5{
+    background-color: var(--color-primary);
+    height: 32px;
+    width: 32px;
+}
+
+.Mesa6{
+     background-color: var(--color-secundary);
+    height: 32px;
+    width: 70px;
+}
+
+.Mesa7{
+    background-color: var(--color-primary);
+    height: 32px;
+    width: 32px;
+}
+
+
+.Mesa8{
+    background-color: var(--color-primary);
+    height: 32px;
+    width: 32px;
+}
+
+.Mesa9{
+    background-color: var(--color-primary);
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
+}
+
+
+.Mesa10{
+    background-color: var(--color-primary);
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
 }
