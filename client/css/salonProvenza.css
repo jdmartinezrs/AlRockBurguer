@@ -82,6 +82,7 @@
     align-content: start;
     padding-right: 30px;
     padding-top: 20px;
+     
 }
 
 .vertical1{
@@ -134,6 +135,7 @@
     background-color: var(--color-secundary);
     height: 32px;
     width: 70px;
+    
    
 }
 
@@ -142,23 +144,31 @@
     height: 32px;
     width: 70px;
     
+   
+    
 }
 
 .Mesa4{
     background-color: var(--color-primary);
     height: 32px;
     width: 32px;
+     
+    
 }
 .Mesa5{
     background-color: var(--color-primary);
     height: 32px;
     width: 32px;
+   
+   
 }
 
 .Mesa6{
      background-color: var(--color-secundary);
     height: 32px;
     width: 70px;
+    
+    
 }
 
 .Mesa7{
@@ -187,4 +197,5 @@
     height: 32px;
     width: 32px;
     margin-right: 10px;
+     background-color: red;
 }

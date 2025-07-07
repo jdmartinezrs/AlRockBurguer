@@ -7,7 +7,7 @@ class ClientesService {
 
     async insertANewClientService(data) {
         try{
-        return await this.clientesRepository.save(data);
+        return await this.clientesRepository.insertANewClientRepository(data);
         } catch (error){
             console.error('Error in insertANewClientService:', error);
             throw new Error(JSON.stringify({status: 500, message: 'Error Inserting New Client'}));
