@@ -1,6 +1,6 @@
-const express = require('express');
-const MenuController = require('../controllers/menuController');
-const MenusValidator = require('../validator/menusValidator');
+import express from 'express';
+import MenuController from '../controllers/menuController.js';
+import MenusValidator from '../validator/menusValidator.js';
 
 const router = express.Router();
 const menusValidator = new MenusValidator();
@@ -10,5 +10,6 @@ const menuController = new MenuController();
 router.get('/menus',menusValidator.getAllMenusValidator(),(req, res) => menuController.getAllMenusController(req, res));
 
 
-module.exports = router;
+export default router;
+
 

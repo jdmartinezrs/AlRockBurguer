@@ -1,8 +1,9 @@
-require('dotenv').config({ path: './.env' });
-const fs = require('fs');
-const https = require('https');
-const ConnectToDatabase = require('./server/infraestructure/database/mongodb');
-const createServer = require('./server/infraestructure/server/server');
+import dotenv from 'dotenv';
+dotenv.config({ path: './.env' });
+import fs  from 'fs';
+import  https from 'https';
+import ConnectToDatabase from './server/infraestructure/database/mongodb.js';
+import createServer from './server/infraestructure/server/server.js';
 
 const startApp = async () => {
     const connectToDatabase = new ConnectToDatabase();

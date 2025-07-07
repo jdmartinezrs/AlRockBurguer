@@ -1,4 +1,4 @@
-const MenusModel = require('../models/menusModel');
+import MenusModel from '../models/menusModel.js';
 
 class MenuRepository {
 
@@ -14,6 +14,6 @@ class MenuRepository {
 
 }
 
-module.exports = MenuRepository;
+export default MenuRepository;
 
 

@@ -1,4 +1,4 @@
-const Menu = require('../../adapters/database/menusSchema')
+import Menu from '../../adapters/database/menusSchema.js'
 //const menusSchema = require('../../adapters/database/menusSchema');
 class MenusModel {
 
@@ -6,4 +6,4 @@ class MenusModel {
     return await Menu.find({}).exec();
 }
 }
-module.exports =  MenusModel
+export default MenusModel;

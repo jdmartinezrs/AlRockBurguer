@@ -1,4 +1,4 @@
-const RestauranteRepository = require('../../domain/repositories/restauranteRepository')
+import RestauranteRepository from '../../domain/repositories/restauranteRepository.js'
 
 class RestauranteServices {
     constructor(){
@@ -14,4 +14,4 @@ class RestauranteServices {
     }
 }
 
-module.exports = RestauranteServices;
+export default RestauranteServices;

@@ -1,4 +1,4 @@
-const RestauranteModel = require ('../models/restauranteModel');
+import RestauranteModel from '../models/restauranteModel.js';
 
 class RestauranteRepository {
     async getAllSeatRoomOneRepository() {
@@ -11,5 +11,5 @@ class RestauranteRepository {
     }
 }
 
-module.exports = RestauranteRepository;
+export default RestauranteRepository;
 

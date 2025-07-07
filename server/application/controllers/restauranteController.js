@@ -1,5 +1,5 @@
-const {validationResult} = require('express-validator');
-const RestauranteServices = require('../services/restauranteServices');
+import { validationResult } from 'express-validator';
+import RestauranteServices from '../services/restauranteServices.js';
 
 
 class RestaurantesController {
@@ -20,4 +20,4 @@ class RestaurantesController {
 }
     }
 
-module.exports = RestaurantesController;
+export default RestaurantesController;

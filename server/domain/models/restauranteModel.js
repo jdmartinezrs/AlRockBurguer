@@ -1,4 +1,4 @@
-const Restaurante = require('../../adapters/database/restaurantesSchema')
+import Restaurante from '../../adapters/database/restaurantesSchema.js';
 
 class RestauranteModel {
 
@@ -7,4 +7,5 @@ async getAllSeatRoomOne(){
     
 }
 }
-module.exports = RestauranteModel;
+export default RestauranteModel;
+

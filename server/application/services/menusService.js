@@ -1,4 +1,4 @@
-const MenuRepository = require('../../domain/repositories/menuRepository');
+import MenuRepository from '../../domain/repositories/menuRepository.js';
 
 
 class MenusService {
@@ -15,4 +15,4 @@ class MenusService {
     }
 }
 
-module.exports = MenusService;
+export default MenusService;

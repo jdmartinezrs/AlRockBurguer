@@ -1,5 +1,5 @@
-const {validationResult} = require('express-validator');
-const MenusService = require('../services/menusService');
+import {validationResult} from 'express-validator';
+import  MenusService from '../services/menusService.js';
 
 class MenuController {
     constructor() {
@@ -20,5 +20,5 @@ class MenuController {
     }
 }
 
-module.exports = MenuController;
+export default MenuController;
 

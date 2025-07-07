@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 const MesaSchema = new Schema({
@@ -16,7 +16,7 @@ const MesaSchema = new Schema({
   },
   estado: {
     type: String,
-    enum: ['disponible', 'ocupada', 'reservada'],
+    enum: ['disponible', 'reservada'],
     default: 'disponible'
   },
   mesa_imagen: String
@@ -51,4 +51,6 @@ const RestauranteSchema = new Schema({
   salones: [SalonSchema]
 }, { timestamps: true });
 
-module.exports = mongoose.model('Restaurante', RestauranteSchema);
+const Restaurante = mongoose.model('Restaurante', RestauranteSchema);
+
+export default Restaurante;

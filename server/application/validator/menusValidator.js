@@ -1,5 +1,6 @@
-const { query, param } = require('express-validator');
-const mongoose = require('mongoose');
+import e from 'express';
+import { query, param } from 'express-validator';
+import mongoose from 'mongoose';
 
 class MenusValidator {
   getAllMenusValidator() {
@@ -12,4 +13,4 @@ class MenusValidator {
   }
 }
 
-module.exports = MenusValidator;
+export default  MenusValidator;

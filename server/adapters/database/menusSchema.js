@@ -1,4 +1,5 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
+
 const { Schema, model, Types } = mongoose;
 
 const HamburguesaSchema = new Schema({
@@ -21,6 +22,8 @@ const MenuSchema = new Schema({
   restaurante_id: { type: Types.ObjectId, ref: 'Restaurante', required: true },
   hamburguesas: { type: [HamburguesaSchema], default: [] },
   bebidas: { type: [BebidaSchema], default: [] }
+}, {
+  timestamps: true // opcional pero útil
 });
 
-module.exports = model('Menu', MenuSchema, 'menus'); 
+export default model('Menu', MenuSchema, 'menus');
