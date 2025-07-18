@@ -8,10 +8,11 @@ const createServer = () => {
     const app = express();
 
     // 🛡️ Middleware CORS
-    app.use(cors({
-        origin: 'https://localhost:5173', 
-        credentials: true
-    }));
+  
+app.use(cors({
+  origin: 'http://localhost:5173',   // no uses https si el frontend es http
+  credentials: true
+}));
 
     app.use(express.json());
 

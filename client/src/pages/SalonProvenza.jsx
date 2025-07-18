@@ -7,7 +7,7 @@ const SalonesProvenza = () => {
   useEffect(() => {
     const fetchMesas = async () => {
       try {
-        const response = await fetch('https://localhost:3000/seats/restaurantes');
+        const response = await fetch('http://localhost:3000/seats/restaurantes');
         const data = await response.json();
         const restaurante = data.find(r => r.barrio === "Provenza");
         const salon1 = restaurante.salones.find(s => s.nombre_sala === "Salón 1");
