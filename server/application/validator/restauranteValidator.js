@@ -1,4 +1,4 @@
-import {query, param } from 'express-validator';
+import {query, param, body} from 'express-validator';
 import mongoose from 'mongoose';
 
 class RestauranteValidator {
@@ -21,6 +21,18 @@ class RestauranteValidator {
         .withMessage('El id del restaurante debe ser un ObjectId válido'),
     ];
   }
+
+   reservarMesasValidator() {
+        return [
+            body('mesasIds')
+                .isArray({ min: 1 })
+                .withMessage('mesasIds debe ser un arreglo con al menos un ID'),
+
+            body('mesasIds.*')
+                .custom(id => mongoose.Types.ObjectId.isValid(id))
+                .withMessage('Cada mesasIds debe ser un ObjectId válido')
+        ];
+    }
 }
 
 export default RestauranteValidator;
