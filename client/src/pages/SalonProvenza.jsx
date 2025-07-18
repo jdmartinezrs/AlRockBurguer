@@ -33,7 +33,7 @@ const SalonesProvenza = () => {
 
   return (
     <div className="container">
-      <div className="despacho"></div>
+      <div className="despacho">Despacho</div>
       <div className="tarima"></div>
 
       <div className="sala1a">
